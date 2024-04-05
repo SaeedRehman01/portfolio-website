@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Website-Saeed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/31149d48b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+      <div class="container">
+        <a class="navbar-brand">
+          <img
+            src="images/logoImage.png"
+            alt="Logo"
+            href=""
+            style="height: 30px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main banner -->
+    <div id="particles-js">
+      <div class="title-container">
+        <h1 class="h1-title">Hello, my name is Saeed</h1>
+        <h2 class="h2-title">I am a developer</h2>
+        <div class="social-icons">
+          <a href="https://github.com/SaeedRehman01" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/saeed150" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- about me section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+          <div class="col-lg-4">
+            <img src="images/myPicture.jpg" class="imageAboutPage" alt="" />
+          </div>
+          <div class="col-lg-8">
+            <div class="row mt-3">
+              <div class="col-md-15">
+                <div class="card aboutmeTexts">
+                  <div class="card-body position-relative">
+                    <i class="fas aboutmeIcons"></i>
+                    <h4 class="card-title mt-3" id="aboutmeTitles"></h4>
+                    <!-- Circles container -->
+                    <div id="circlesContainer" class="circles-container"></div>
+                    <p class="card-text mt-3" id="aboutmeDescriptions"></p>
+                    <button
+                      class="arrow-button position-absolute"
+                      id="prevButton"
+                    >
+                      <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button
+                      class="arrow-button position-absolute"
+                      id="nextButton"
+                    >
+                      <i class="fas fa-angle-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <p>
+                I am a Computer Science graduate and have gained a year's
+                experience as a software engineer intern. My interests are
+                within various areas such as software engineering and data
+                science. In my free time, I enjoy watching football, playing
+                video games, working out at the gym, and traveling to different
+                countries whenever possible. I am now eager to find an
+                opportunity that allows me to further develop my skills and
+                express my passion for continuous learning in the field of
+                technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+      <div class="container mt-3">
+        <h1 class="text-center">Couple Projects</h1>
+        <!-- New Row -->
+        <div class="row justify-content-center">
+          <!-- Project 1 -->
+          <div class="col-lg-4 mt-4">
+            <div class="card projectsContent">
+              <img
+                class="card-img-top"
+                src="images/project1.png"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Weather App</h4>
+                <p class="card-text">
+                  Explore real-time weather updates with this user-friendly
+                  Weather App. Seamlessly search for current weather conditions
+                  in any city, including details like temperature, humidity, and
+                  wind metrics. Crafted using HTML, CSS, and JavaScript, this
+                  app ensures a smooth and informative user experience.
+                </p>
+                <div class="text-center">
+                  <div class="social-icons">
+                    <a
+                      href="https://github.com/SaeedRehman01/Weather-App-JS"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 mt-4">
+            <div class="card projectsContent">
+              <img
+                class="card-img-top"
+                src="images/project3.png"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Predict with Machine Learning</h4>
+                <p class="card-text">
+                  Utilising the 'mars-weather.csv' dataset, this project aims to
+                  accurately forecast Mars's maximum temperature using advanced
+                  machine learning techniques. Developed with tools like Pandas,
+                  Matplotlib, Seaborn, and Scikit-learn, it represents a blend
+                  of data analysis and predictive modeling.
+                </p>
+
+                <div class="text-center">
+                  <div class="social-icons">
+                    <a
+                      href="https://github.com/SaeedRehman01/ML-Predict-Mars-MaxTemp"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+      <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-6">
+            <!-- form fields -->
+            <!-- email contact form: https://web3forms.com/ -->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="contact-form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="50057f5a-ea07-4a85-a79c-2c5ca4be5518"
+              />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control form-control-lg"
+                placeholder="Name *"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control mt-3"
+                placeholder="Email *"
+              />
+              <div class="mb-3 mt-3">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Message *"
+                ></textarea>
+              </div>
+              <div class="button-container">
+                <!-- <button type="submit">Send</button> -->
+                <button class="submitBtn" role="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="footer">© 2024</footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+    <!-- particles files -->
+    <script src="script/particles.js/particles.js"></script>
+    <script src="script/particles.js/app.js"></script>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>

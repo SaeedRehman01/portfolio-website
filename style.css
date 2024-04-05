@@ -1,0 +1,280 @@
+/* Google Fonts Import with Fallback */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  /* Define CSS Variables */
+  --primary-bg-color: #000814;
+  --secondary-bg-color: #000d1f;
+  --hover-color-grey: grey;
+  --navbar-font-size: 22px;
+  --main-font-family: "Roboto", sans-serif;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Consistent box sizing */
+  font-family: var(--main-font-family);
+}
+
+/* Navbar Styles */
+.navbarScroll.navbarDark {
+  background-color: black;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  font-size: var(--navbar-font-size) !important;
+  color: white !important; /* Set default font color to white */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+  color: grey !important; /* Change font color to grey on hover */
+}
+
+/* Main Background */
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary-bg-color);
+  background-size: cover;
+}
+
+/* Title Container */
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.h1-title,
+.h2-title {
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+.h1-title {
+  font-size: 70px;
+  margin-top: 0;
+}
+
+.h2-title {
+  font-size: 50px;
+  margin-top: 15px;
+  opacity: 0;
+}
+
+.h1-title::after,
+.h2-title::after {
+  content: "|";
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.h1-title.no-cursor::after,
+.h2-title.no-cursor::after {
+  content: "";
+}
+
+/* Social Icons */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 45px;
+}
+
+.social-icons a:hover {
+  color: var(--hover-color-grey);
+}
+
+/* Section Styling */
+#about,
+#aboutmeSections,
+#projects,
+#contact {
+  padding-top: 3rem;
+  background-color: var(--primary-bg-color);
+}
+
+/* Color Scheme */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+.navbar,
+.card,
+.btn,
+.form-control,
+#footer {
+  color: white;
+}
+
+.card {
+  background-color: transparent !important;
+}
+.card-body,
+#name,
+#email,
+#message {
+  background-color: var(--secondary-bg-color);
+  border: none;
+  color: white;
+}
+
+#name::placeholder,
+#email::placeholder,
+#message::placeholder {
+  color: rgba(255, 255, 255, 0.744);
+}
+/* About Section */
+.imageAboutPage {
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+/* aboutme Section */
+.aboutmeIcons {
+  font-size: 36px;
+  padding-top: 1rem;
+  text-align: center;
+  width: 100%;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.card-title {
+  text-align: center;
+}
+
+.aboutmeTexts:hover,
+.projectsContent:hover,
+#name:hover,
+#email:hover,
+#message:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.card-body {
+  overflow: auto; /* Add scroll only if content overflows */
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 15px;
+  }
+  .card-title,
+  .card-text {
+    font-size: smaller;
+  }
+}
+
+/* Arrows in About Box */
+.card-body.position-relative {
+  position: relative;
+  padding: 0 50px;
+}
+
+.arrow-button {
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  z-index: 10;
+}
+
+#prevButton {
+  left: 10px;
+}
+
+#nextButton {
+  right: 10px;
+}
+
+.arrow-button i {
+  color: white;
+  font-size: 40px;
+}
+
+.circles-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--hover-color-grey);
+  margin: 0 5px;
+}
+
+.circle.active {
+  background-color: white;
+}
+
+/* Contact Section */
+#contact {
+  padding-bottom: 4rem;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submitBtn {
+  appearance: button;
+  font-family: var(--main-font-family);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--primary-bg-color);
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 10px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 150px;
+}
+
+.submitBtn:hover {
+  background-color: var(--hover-color-grey);
+  border-color: var(--hover-color-grey);
+}
+
+/* Footer Styling */
+#footer {
+  background-color: black;
+  text-align: center;
+}
