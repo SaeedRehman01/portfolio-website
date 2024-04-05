@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     {
-      icon: "fa-solid fa-code",
+      icon: "fa-solid fa-code-branch",
       title: "Soft Skills",
       description: `- Problem-Solving: Excel in diagnosing issues and implementing efficient solutions.
         - Adaptability: Quickly adapt to new technologies and changes in project scope.
