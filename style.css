@@ -59,6 +59,10 @@
   display: block;
   margin: auto;
   width: fit-content;
+  opacity: 0; /* hide initially to avoid flash */
+  min-height: 1.05em; /* reserve height so layout doesn't jump */
+  line-height: 1.05em;
+  transition: opacity 220ms ease-in; /* smooth reveal */
 }
 
 .h1-title {
@@ -69,7 +73,7 @@
 .h2-title {
   font-size: clamp(28px, 5vw, 64px);
   margin-top: 15px;
-  opacity: 0;
+  /* keep opacity 0 here until typing starts (already set above) */
 }
 
 .h1-title::after,

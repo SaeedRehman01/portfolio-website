@@ -108,33 +108,37 @@ document.addEventListener("DOMContentLoaded", function () {
   const subtitleElement = document.querySelector(".h2-title");
   const fullTextH1 = titleElement.innerText;
   const fullTextH2 = subtitleElement.innerText;
-  let currentTextH1 = "";
-  let currentTextH2 = "";
   let charIndexH1 = 0;
   let charIndexH2 = 0;
 
-  // tweak these values (milliseconds) to slow/speed typing
-  const typeSpeedH1 = 190; // h1 delay per char (increase to slow more)
-  const typeSpeedH2 = 190; // h2 delay per char
-  const pauseBeforeH2 = 400; // pause after h1 finishes before h2 starts
+  const typeSpeedH1 = 190;
+  const typeSpeedH2 = 190;
+  const pauseBeforeH2 = 400;
+
+  // clear the visible text (it's hidden by CSS already, but clear to be safe)
+  titleElement.innerText = "";
+  subtitleElement.innerText = "";
 
   function typeWriterTitle() {
+    // reveal title area before typing
+    titleElement.style.opacity = "1";
+
     if (charIndexH1 < fullTextH1.length) {
-      currentTextH1 = fullTextH1.substring(0, charIndexH1 + 1);
-      titleElement.innerText = currentTextH1;
+      titleElement.innerText = fullTextH1.substring(0, charIndexH1 + 1);
       charIndexH1++;
       setTimeout(typeWriterTitle, typeSpeedH1);
     } else {
       titleElement.classList.add("no-cursor");
-      setTimeout(typeWriterSubtitle, pauseBeforeH2); // small pause then start h2
+      setTimeout(typeWriterSubtitle, pauseBeforeH2);
     }
   }
 
   function typeWriterSubtitle() {
-    subtitleElement.style.opacity = 1;
+    // reveal subtitle when its typing begins
+    subtitleElement.style.opacity = "1";
+
     if (charIndexH2 < fullTextH2.length) {
-      currentTextH2 = fullTextH2.substring(0, charIndexH2 + 1);
-      subtitleElement.innerText = currentTextH2;
+      subtitleElement.innerText = fullTextH2.substring(0, charIndexH2 + 1);
       charIndexH2++;
       setTimeout(typeWriterSubtitle, typeSpeedH2);
     } else {
