@@ -61,7 +61,7 @@ particlesJS("particles-js", {
       remove: { particles_nb: 1 },
     },
   },
-  retina_detect: true, // keep retina enabled
+  retina_detect: false,
   config_demo: {
     hide_card: false,
     background_color: "#eeeeee",

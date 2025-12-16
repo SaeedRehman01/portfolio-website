@@ -26,12 +26,12 @@
 .navbar-nav .nav-link,
 .navbar-brand {
   font-size: var(--navbar-font-size) !important;
-  color: white !important; /* Set default font color to white */
+  color: white !important;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-brand:hover {
-  color: grey !important; /* Change font color to grey on hover */
+  color: grey !important;
 }
 
 /* Main Background */
@@ -282,15 +282,15 @@ a,
 /* Make project boxes equal height */
 #projects .row {
   display: flex;
-  flex-wrap: wrap; /* keep responsive behavior */
-  align-items: stretch; /* ensure children stretch to same height */
+  flex-wrap: wrap;
+  align-items: stretch;
   gap: 1rem;
 }
 
 #projects .col,
 #projects [class*="col-"] {
   display: flex;
-  flex-direction: column; /* let the card expand vertically */
+  flex-direction: column;
 }
 
 /* Ensure cards fill their column and body expands */
@@ -301,5 +301,5 @@ a,
 }
 
 #projects .card-body {
-  flex: 1 1 auto; /* allow content area to grow and keep equal heights */
+  flex: 1 1 auto;
 }
