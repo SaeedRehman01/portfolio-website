@@ -113,31 +113,36 @@ document.addEventListener("DOMContentLoaded", function () {
   let charIndexH1 = 0;
   let charIndexH2 = 0;
 
+  // tweak these values (milliseconds) to slow/speed typing
+  const typeSpeedH1 = 190; // h1 delay per char (increase to slow more)
+  const typeSpeedH2 = 190; // h2 delay per char
+  const pauseBeforeH2 = 400; // pause after h1 finishes before h2 starts
+
   function typeWriterTitle() {
     if (charIndexH1 < fullTextH1.length) {
       currentTextH1 = fullTextH1.substring(0, charIndexH1 + 1);
       titleElement.innerText = currentTextH1;
       charIndexH1++;
-      setTimeout(typeWriterTitle, 125); // Adjust typing speed here
+      setTimeout(typeWriterTitle, typeSpeedH1);
     } else {
       titleElement.classList.add("no-cursor");
-      typeWriterSubtitle(); // Start the typing effect for h2-title
+      setTimeout(typeWriterSubtitle, pauseBeforeH2); // small pause then start h2
     }
   }
 
   function typeWriterSubtitle() {
-    subtitleElement.style.opacity = 1; // Make h2-title visible for typing
+    subtitleElement.style.opacity = 1;
     if (charIndexH2 < fullTextH2.length) {
       currentTextH2 = fullTextH2.substring(0, charIndexH2 + 1);
       subtitleElement.innerText = currentTextH2;
       charIndexH2++;
-      setTimeout(typeWriterSubtitle, 125); // Adjust typing speed here
+      setTimeout(typeWriterSubtitle, typeSpeedH2);
     } else {
       subtitleElement.classList.add("no-cursor");
     }
   }
 
-  typeWriterTitle(); // Start the typing effect for h1-title
+  setTimeout(typeWriterTitle, 150); // optional small initial delay
 });
 
 // Contact form makes sure contact message has content

@@ -62,12 +62,12 @@
 }
 
 .h1-title {
-  font-size: 70px;
+  font-size: clamp(48px, 7vw, 88px);
   margin-top: 0;
 }
 
 .h2-title {
-  font-size: 50px;
+  font-size: clamp(28px, 5vw, 64px);
   margin-top: 15px;
   opacity: 0;
 }

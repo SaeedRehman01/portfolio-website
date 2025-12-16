@@ -13,32 +13,32 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 particlesJS("particles-js", {
   particles: {
-    number: { value: 100, density: { enable: true, value_area: 1000 } },
+    number: { value: 80, density: { enable: true, value_area: 800 } }, // reduced count
     color: { value: ["#ffffff", "#ff9999", "#99ff99", "#9999ff"] },
     shape: {
       type: ["circle", "triangle", "edge"],
       stroke: { width: 0, color: "#000" },
     },
     opacity: {
-      value: 0.5,
+      value: 0.6,
       random: false,
-      anim: { enable: true, speed: 2, opacity_min: 0.1, sync: false },
+      anim: { enable: true, speed: 1.5, opacity_min: 0.15, sync: false },
     },
     size: {
-      value: 5,
+      value: 3,
       random: true,
-      anim: { enable: true, speed: 50, size_min: 0.1, sync: false },
+      anim: { enable: true, speed: 20, size_min: 0.3, sync: false },
     },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 120,
       color: "#ffffff",
-      opacity: 0.6,
+      opacity: 0.35,
       width: 1,
     },
     move: {
       enable: true,
-      speed: 4,
+      speed: 2,
       direction: "none",
       random: false,
       straight: false,
@@ -47,21 +47,21 @@ particlesJS("particles-js", {
     },
   },
   interactivity: {
-    detect_on: "canvas",
+    detect_on: "window", // reduce expensive canvas-level detection
     events: {
       onhover: { enable: true, mode: "repulse" },
       onclick: { enable: true, mode: "push" },
       resize: true,
     },
     modes: {
-      grab: { distance: 400, line_linked: { opacity: 1 } },
-      bubble: { distance: 100, size: 30, duration: 2, opacity: 8, speed: 3 },
-      repulse: { distance: 200 },
-      push: { particles_nb: 4 },
-      remove: { particles_nb: 2 },
+      grab: { distance: 300, line_linked: { opacity: 0.9 } },
+      bubble: { distance: 90, size: 24, duration: 1.5, opacity: 8, speed: 2 },
+      repulse: { distance: 100 }, // shorter repulse radius
+      push: { particles_nb: 3 },
+      remove: { particles_nb: 1 },
     },
   },
-  retina_detect: true,
+  retina_detect: true, // keep retina enabled
   config_demo: {
     hide_card: false,
     background_color: "#eeeeee",
