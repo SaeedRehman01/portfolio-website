@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       icon: "fa-thin fa-graduation-cap",
       title: "Education & Experience",
       description: `BSc Computer Science (Hons)
-      - First Class Honors
+      - 1st Class Honours
 
       Graduate Engineer, HSBC (Current)
       - Working on various projects to improve banking services.
