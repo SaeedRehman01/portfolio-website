@@ -278,3 +278,28 @@ a,
   background-color: black;
   text-align: center;
 }
+
+/* Make project boxes equal height */
+#projects .row {
+  display: flex;
+  flex-wrap: wrap; /* keep responsive behavior */
+  align-items: stretch; /* ensure children stretch to same height */
+  gap: 1rem;
+}
+
+#projects .col,
+#projects [class*="col-"] {
+  display: flex;
+  flex-direction: column; /* let the card expand vertically */
+}
+
+/* Ensure cards fill their column and body expands */
+#projects .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#projects .card-body {
+  flex: 1 1 auto; /* allow content area to grow and keep equal heights */
+}

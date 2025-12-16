@@ -29,7 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Education & Experience",
       description: `BSc Computer Science (Hons)
       - First Class Honors
-      
+
+      Graduate Engineer, HSBC (Current)
+      - Working on various projects to improve banking services.
+
       Software Engineering Intern, Bosch Rexroth (1 year)
       - Developed multiple software applications, enhancing business processes.`,
     },
