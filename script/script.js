@@ -1,5 +1,4 @@
 const header = document.querySelector(".navbar");
-console.log(header);
 window.onscroll = function () {
   const top = window.scrollY;
   if (top >= 100) {
@@ -8,6 +7,23 @@ window.onscroll = function () {
     header.classList.remove("navbarDark");
   }
 };
+
+// fade/slide elements into view as they enter the viewport
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 },
+);
+
+document
+  .querySelectorAll(".reveal")
+  .forEach((el) => revealObserver.observe(el));
 
 // collapse navbar after click on small devices
 const navLinks = document.querySelectorAll(".nav-item");

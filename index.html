@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Saeed - Portfolio</title>
@@ -47,6 +47,9 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#game">Play</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -62,12 +65,28 @@
           Turning ideas into real-world solutions with code
         </h2>
         <div class="social-icons">
-          <a href="https://github.com/SaeedRehman01" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/saeed150" target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
+          <a
+            href="https://github.com/SaeedRehman01"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.06.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+              /></svg
+            ><span>GitHub</span></a
+          >
+          <a
+            href="https://www.linkedin.com/in/saeed150"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.554V9h3.565v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+              /></svg
+            ><span>LinkedIn</span></a
+          >
         </div>
       </div>
     </div>
@@ -75,15 +94,15 @@
     <!-- about me section-->
     <section id="about">
       <div class="container mt-4 pt-4">
-        <h1 class="text-center">About Me</h1>
+        <h1 class="text-center section-title reveal">About Me</h1>
         <div class="row mt-4">
-          <div class="col-lg-4">
+          <div class="col-lg-4 reveal">
             <img src="images/myPicture.jpg" class="imageAboutPage" alt="" />
           </div>
           <div class="col-lg-8">
             <div class="row mt-3">
               <div class="col-md-15">
-                <div class="card aboutmeTexts">
+                <div class="card aboutmeTexts reveal">
                   <div class="card-body position-relative">
                     <i class="fas aboutmeIcons"></i>
                     <h4 class="card-title mt-3" id="aboutmeTitles"></h4>
@@ -93,26 +112,45 @@
                     <button
                       class="arrow-button position-absolute"
                       id="prevButton"
+                      type="button"
+                      aria-label="Previous About section"
                     >
-                      <i class="fas fa-angle-left"></i>
+                      <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m15 18-6-6 6-6" />
+                      </svg>
                     </button>
                     <button
                       class="arrow-button position-absolute"
                       id="nextButton"
+                      type="button"
+                      aria-label="Next About section"
                     >
-                      <i class="fas fa-angle-right"></i>
+                      <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m9 18 6-6-6-6" />
+                      </svg>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row mt-3">
+            <div class="row mt-3 reveal">
               <p>
                 I'm a Graduate Engineer at HSBC, with an undergraduate degree in
-                Computer Science. I enjoy exploring different areas of computing and turning ideas into reliable, effective solutions. Outside of work, you might find me boxing (or watching it), lifting at the gym, video gaming, traveling whenever I
-                get the chance. I'm always looking to keep learning, improve my
-                skills, and grow as an engineer.
+                Computer Science. I enjoy exploring different areas of computing
+                and turning ideas into reliable, effective solutions. Outside of
+                work, you might find me boxing (or watching it), lifting at the
+                gym, video gaming, traveling whenever I get the chance. I'm
+                always looking to keep learning, improve my skills, and grow as
+                an engineer.
               </p>
             </div>
           </div>
@@ -123,18 +161,19 @@
     <!-- projects section -->
     <section id="projects">
       <div class="container mt-3">
-        <h1 class="text-center">Projects</h1>
+        <h1 class="text-center section-title reveal">Projects</h1>
         <!-- New Row -->
         <div class="row justify-content-center">
           <!-- Project 1 -->
-          <div class="col-lg-4 mt-4">
+          <div class="col-lg-4 mt-4 reveal">
             <div class="card projectsContent">
-              <img
-                class="card-img-top"
-                src="images/project1.png"
-                alt="Card image"
-                style="width: 100%"
-              />
+              <div class="project-thumb">
+                <img
+                  class="card-img-top"
+                  src="images/project1.png"
+                  alt="Card image"
+                />
+              </div>
               <div class="card-body">
                 <h4 class="card-title">Weather App</h4>
                 <p class="card-text">
@@ -144,12 +183,26 @@
                   wind metrics. Crafted using HTML, CSS, and JavaScript, this
                   app ensures a smooth and informative user experience.
                 </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
                 <div class="text-center">
                   <div class="social-icons">
                     <a
                       href="https://github.com/SaeedRehman01/Weather-App-JS"
                       target="_blank"
-                      ><i class="fab fa-github"></i
+                      rel="noopener noreferrer"
+                      aria-label="Weather App on GitHub"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.06.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
                     ></a>
                   </div>
                 </div>
@@ -158,25 +211,47 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="col-lg-4 mt-4">
+          <div class="col-lg-4 mt-4 reveal">
             <div class="card projectsContent">
-              <img
-                class="card-img-top"
-                src="images/project2.png"
-                alt="Card image"
-                style="width: 100%"
-              />
+              <div class="project-thumb">
+                <img
+                  class="card-img-top"
+                  src="images/project2.png"
+                  alt="Card image"
+                />
+              </div>
               <div class="card-body">
                 <h4 class="card-title">Predict with ML</h4>
                 <p class="card-text">
-                  Utilising the 'mars-weather.csv' dataset, this project aims to accurately forecast Mars's maximum temperature using machine learning techniques. Developed with tools like Pandas, Matplotlib, Seaborn, and Scikit-learn, it represents a blend of data analysis and predictive modeling.
+                  A machine learning project analysing Mars weather data to
+                  predict the maximum daily temperature. Includes data
+                  visualisation (correlation heatmaps, histograms), single
+                  regression models (Random Forest, Decision Tree), and ensemble
+                  learning techniques (bagging and stacking) built with Python,
+                  Pandas, Scikit-learn, Matplotlib, and Seaborn.
                 </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Matplotlib</span>
+                  <span class="tech-tag">Seaborn</span>
+                </div>
                 <div class="text-center">
                   <div class="social-icons">
                     <a
                       href="https://github.com/SaeedRehman01/ML-Predict-Mars-MaxTemp"
                       target="_blank"
-                      ><i class="fab fa-github"></i
+                      rel="noopener noreferrer"
+                      aria-label="Predict with ML on GitHub"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.06.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
                     ></a>
                   </div>
                 </div>
@@ -185,14 +260,15 @@
           </div>
 
           <!-- Project 3 -->
-          <div class="col-lg-4 mt-4">
+          <div class="col-lg-4 mt-4 reveal">
             <div class="card projectsContent">
-              <img
-                class="card-img-top"
-                src="images/project3.png"
-                alt="Card image"
-                style="width: 100%"
-              />
+              <div class="project-thumb">
+                <img
+                  class="card-img-top"
+                  src="images/project3.png"
+                  alt="Card image"
+                />
+              </div>
               <div class="card-body">
                 <h4 class="card-title">Tic Tac Toe Game</h4>
                 <p class="card-text">
@@ -202,12 +278,25 @@
                   programming concepts and user interface design, providing an
                   competitive gaming experience.
                 </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">Windows Forms</span>
+                </div>
                 <div class="text-center">
                   <div class="social-icons">
                     <a
                       href="https://github.com/SaeedRehman01/Tic-Tac-Toe"
                       target="_blank"
-                      ><i class="fab fa-github"></i
+                      rel="noopener noreferrer"
+                      aria-label="Tic Tac Toe on GitHub"
+                      ><svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.06.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        /></svg
                     ></a>
                   </div>
                 </div>
@@ -219,13 +308,52 @@
       </div>
     </section>
 
+    <!-- mini game section -->
+    <section id="game">
+      <div class="container mt-3">
+        <h1 class="text-center section-title reveal">Take a Break</h1>
+        <p class="text-center reveal">
+          Play a quick game of Pong &mdash; drag/move to control your paddle.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <div class="card game-card">
+              <div class="card-body">
+                <div class="game-scoreboard">
+                  <span>You: <strong id="playerScore">0</strong></span>
+                  <span>CPU: <strong id="cpuScore">0</strong></span>
+                </div>
+                <div class="game-canvas-wrapper">
+                  <canvas id="pongCanvas" aria-label="Pong game"></canvas>
+                  <div class="game-overlay" id="gameOverlay">
+                    <button class="submitBtn" id="gameStartBtn" type="button">
+                      Start Game
+                    </button>
+                  </div>
+                </div>
+                <div class="game-controls">
+                  <button
+                    class="gameSecondaryBtn"
+                    id="gameResetBtn"
+                    type="button"
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- contact section-->
     <section id="contact">
       <div class="container mt-3 contactContent">
-        <h1 class="text-center">Contact Me</h1>
+        <h1 class="text-center section-title reveal">Contact Me</h1>
 
         <div class="row justify-content-center mt-4">
-          <div class="col-lg-6">
+          <div class="col-lg-6 reveal">
             <!-- form fields -->
             <!-- email contact form: https://web3forms.com/ -->
             <form
@@ -275,6 +403,8 @@
 
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
+    <!-- mini game -->
+    <script src="script/game.js"></script>
     <!-- particles files -->
     <script src="script/particles.js/particles.js"></script>
     <script src="script/particles.js/app.js"></script>
